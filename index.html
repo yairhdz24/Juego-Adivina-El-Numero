@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el Numero</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="numeros.png" />
+</head>
+<body>
+  <div class="title">
+    <h1>Juego de Adivina el Numero, ¿podrás?</h1>
+  </div>
+  <div class="information">
+    <h2>
+      ¿De qué trata este juego?
+      <span>
+        En este juego, debes seleccionar un número aleatorio entre el 1 y 100.
+        Tienes 10 intentos o menos para adivinar el número. ¡Buena suerte!
+      </span>
+    </h2>
+    <div class="contenedor">
+      <input type="text" id="numeroUsuario" placeholder="Escribe un numero" />
+      <br />
+      <button type="button" onclick="adivinarNumero()">Enviar</button>
+      <button type="button" onclick="reiniciarJuego()">Reset</button>
+      <div class="numeros-intentados" id="numerosIntentados"></div>
+      <div class="mensaje" id="mensaje"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
